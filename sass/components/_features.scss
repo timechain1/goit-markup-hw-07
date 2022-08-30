@@ -1,0 +1,48 @@
+/* ========== ОСОБЛИВОСТІ ========== */
+.features {
+    display: flex;
+}
+
+.features__icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: var(--brand-bg-grey);
+}
+
+.features__icon {
+    height: 70px;
+    width: 70px;
+}
+
+.features__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--brand-black);
+}
+
+.features__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--brand-grey);
+}
+
+.features__item {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+/* ========== /ОСОБЛИВОСТІ ========== */

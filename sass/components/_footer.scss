@@ -1,0 +1,95 @@
+/* ========== FOOTER ========== */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--brand-bg-color);
+}
+
+.footer__columns {
+    align-items: baseline;
+    display: flex;
+}
+
+.footer__contacts-box {
+    flex-grow: 1;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer__socials-box {
+    margin-left: 70px;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--simple-white);
+}
+
+.footer__subscribe-box {
+    display: flex;
+    margin-left: 93px;
+    align-items: flex-end;
+}
+
+.footer__subscribe-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__btn {
+    margin-left: 12px;
+}
+
+.footer__subscribe-input {
+    width: 358px;
+    padding: 15px 16px;
+
+    background-color: var(--brand-bg-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    color: var(--simple-white);
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    color: var(--simple-white);
+    transition: color var(--transition);
+
+    /* * «С5» Текст контактів в !хедері! і !футері! змінює колір при ховері і фокусі. */
+    /* .address__link--contact:hover,
+.address__link--contact:focus, */
+    &:hover,
+    &:focus {
+        color: var(--brand-main-color);
+    }
+}
+
+.address__link--contact {
+    color: rgba(255, 255, 255, 0.6);
+    /* transition: color var(--transition); */
+}
+/* ========== /FOOTER ========== */

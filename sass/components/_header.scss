@@ -1,0 +1,113 @@
+/* todo Закріпити хедер */
+
+/* ========== ВЕРХНІЙ РЯДОК ========== */
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+/* навігація (flex для лого+меню)*/
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+/* ховер лого по всій площині у заголовку */
+.nav__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+/* Меню */
+.menu {
+    display: flex;
+    margin-left: 93px;
+    user-select: none;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu__link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--brand-black);
+    transition: color var(--transition);
+
+/* Підкреслювання під назвою */ 
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--brand-main-color);
+
+        transform: scale(0);
+        transition: transform var(--transition);
+    }
+
+    /* Поява підкреслювання під назвою по ховеру/фокусу */
+    &:hover::after,
+    &:focus::after {
+        transform: scale(1);
+    }
+}
+
+/* Підсвічування активної сторінки */
+.menu__link--current {
+    color: var(--brand-main-color);
+
+    &::after {
+        transform: scale(1);
+    }
+}
+
+/* Контакти в хедері */
+.contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.contacts__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--brand-grey);
+    transition: color var(--transition);
+}
+
+.menu__link:hover,
+.menu__link:focus,
+.contacts__link:hover,
+.contacts__link:focus {
+    color: var(--brand-main-color);
+}
+
+/* ========== /ВЕРХНІЙ РЯДОК ========== */

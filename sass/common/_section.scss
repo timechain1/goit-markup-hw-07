@@ -1,0 +1,25 @@
+/* Секція */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    &--null-padding-top {
+        padding-top: 0;
+    }
+
+    &--bg-grey {
+        background-color: var(--brand-bg-grey);
+    }
+}
+
+.section__title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--brand-black);
+}
+
+/* /Секція */
