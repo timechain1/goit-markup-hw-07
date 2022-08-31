@@ -1,4 +1,4 @@
-/* ========== FOOTER ========== */
+/*  Footer  */
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -79,7 +79,7 @@
     color: var(--simple-white);
     transition: color var(--transition);
 
-    /* * «С5» Текст контактів в !хедері! і !футері! змінює колір при ховері і фокусі. */
+    /*  «С5» Contact text in the header and footer changes color on hover and focus */
     /* .address__link--contact:hover,
 .address__link--contact:focus, */
     &:hover,
@@ -92,4 +92,3 @@
     color: rgba(255, 255, 255, 0.6);
     /* transition: color var(--transition); */
 }
-/* ========== /FOOTER ========== */

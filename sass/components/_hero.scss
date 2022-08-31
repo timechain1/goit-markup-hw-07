@@ -1,14 +1,14 @@
-/* ========== ГЕРОЙ ========== */
+/*  Hero  */
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
 
     text-align: center;
     
-    /* наслідується до дітей */
+    /* inherited to children */
     background-color: var(--brand-bg-color);
 
-    /* оверлей (поки тільки на герої) */
+    /* overlay (for now only on heroes) */
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -22,7 +22,7 @@
     background-position: center;
     background-size: cover;
     background-color: #C4C4C4;
-    /* /оверлей (поки тільки на герої) */
+
 }
 
 .hero__title {
@@ -35,4 +35,3 @@
     text-transform: uppercase;
     color: var(--simple-white);
 }
-/* ========== /ГЕРОЙ ========== */

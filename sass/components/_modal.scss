@@ -1,7 +1,5 @@
-/* todo make autofocus on modal */
-
-/* ========== МОДАЛЬНЕ ВІКНО ========== */
-/* Оверлей модального вікна */
+/* ========== Modal window  */
+/* Modal window overlay */
 .backdrop {
     position: fixed;
     top: 0;
@@ -25,9 +23,8 @@
     transition: transform var(--transition),
         visibility var(--transition);
 }
-/* /Оверлей модального вікна */
 
-/* Головне вікно */
+/* Main window */
 .modal {
     display: flex;
     flex-direction: column;
@@ -43,11 +40,11 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition);
 
-    /* Заборона виділення текстуу, щоб не заважало користувачу */
+    /* Prohibition of text selection so as not to disturb the user */
     // user-select: none;
 }
 
-/* Заголовок модального вікна*/
+/* The title of the modal window */
 .modal__header {
     display: block;
     margin-bottom: 12px;
@@ -63,7 +60,7 @@
     margin-bottom: 20px;
 }
 
-/* === Стилі полів ввведення інформацції === */
+/*  Styles of input fields */
 .modal__label {
     // margin-bottom: 4px;
 
@@ -107,7 +104,7 @@
     transition: border-color var(--transition);
 }
 
-// Для обов'язкових полів, якщо вже введенні значення не вірні бордер буде червоним
+// For mandatory fields, if already entered values ​​are not correct, the border will be red
 .modal__input:not(:placeholder-shown):required:invalid {
     border-color: #f44336;
     outline-width: 0;
@@ -125,7 +122,7 @@
     }
 }
 
-/* Іконки на полях введення */
+/* Icons on input fields */
 .modal__icon {
     position: absolute;
     width: 18px;
@@ -137,7 +134,7 @@
     fill: currentColor;
 }
 
-/* фарбуємо оутлайн полів вводу при ховері, фокусі і коли курсор у полі введення */
+/* paint the outline of the input fields when hovering, focusing, and when the cursor is in the input field */
 // .modal__label:hover .modal__input,
 .modal__label:focus .modal__input,
 .modal__input:focus-within {
@@ -146,14 +143,14 @@
     // outline-color: var(--brand-main-color);
 }
 
-/* фарбуємо іконки по ховеру і фокусу, а також коли курсор у полі введення */
+/* paint the icons on hover and focus, as well as when the cursor is in the input field */
 // .modal__label:hover .modal__icon,
 .modal__label:focus .modal__icon,
 .modal__label:focus-within .modal__icon{
     color: var(--brand-main-color);
     // fill: var(--brand-main-color); 
 }
-/* === /Стилі полів ввведення інформацції === */
+/* Styles of input fields  */
 
 /* === Поле згоди з умовами === */
 /* Стилі для загального label */
@@ -165,7 +162,7 @@
 
     color: transparent;
 
-    /* Змінюю колір тексту при ховері/фокусі */
+    /* I change the color of the text on hover/focus */
     &:hover .agreement__text,
     &:focus .agreement__text {
         color: var(--brand-main-color);
@@ -174,14 +171,14 @@
         /* border-radius: 4px; */
     }
 
-    /* Змінюю колір бордера іконки при ховері/фокусі */
+    /* I change the color of the border of the icon on hover/focus */
     &:hover .agreement__icon,
     &:focus .agreement__icon {
         border-color: var(--brand-main-color);
     }
 }
 
-/* стилі іконки чекбоксу за замовчуванням */
+/* default checkbox icon styles */
 .agreement__icon {
     display: flex;
     align-items: center;
@@ -195,7 +192,7 @@
     transition: border-color var(--transition);
 }
 
-/* Стилі тексту "приймаю умови" */
+/* "I accept terms" text styles */
 .agreement__text {
     font-size: 14px;
     line-height: 1.71;
@@ -203,14 +200,14 @@
     transition: color var(--transition);
 }
 
-/* Додаткова стилізація посилання на "Умови договору" */
+/* Additional stylization of the link to "Contract Terms" */
 .agreement__terms-link {
     text-decoration: underline;
     color: var(--brand-main-color);
 }
 
-/* Приховане поле input з type="checkbox" */
-/* Зміна стилю іконки чекбоксу при натисканні на .agreement  */
+/* Hidden input field with type="checkbox" */
+/* Changing the style of the checkbox icon when clicking on .agreement  */
 .agreement__checkbox:checked + .agreement__icon {
     /* background-origin: border-box; */
     color: var(--brand-main-color);
@@ -218,28 +215,11 @@
     background-color: var(--brand-main-color);
     background-size: contain;
 
-    /* якщо не задати бордер=0, то іконка лишається зменшеною */
+    /* if you do not set border=0, the icon remains reduced */
     border: 0;
 }
 
-/* Малюю отулайн, бо інакше при фокусі через "TAB" фокусу не видно */
+/* I draw an outline, because otherwise, when focusing through "TAB", the focus is not visible*/
 .agreement__checkbox:focus + .agreement__icon {
     outline: 1px solid var(--brand-black);
 }
-
-// варіант від Олексія Репіна:
-// .fake-checkbox::before {
-//     height: 20px;
-//     width: 20px;
-//     border: 1px solid red;
-//     display: block;
-//     content: "";
-//     cursor: pointer;
-//     background-color: blue;
-// }
-// .agreement__checkbox:checked + .fake-checkbox::before {
-//     background-color: aqua;
-// }
-
-/* === /Поле згоди з умовами === */
-/* ========== /МОДАЛЬНЕ ВІКНО ========== */

@@ -1,23 +1,21 @@
-/* todo Закріпити хедер */
-
-/* ========== ВЕРХНІЙ РЯДОК ========== */
+/* top line */
 .header {
     border-bottom: 1px solid #ECECEC;
 }
 
-/* навігація (flex для лого+меню)*/
+/* navigation (flex for logo+menu) */
 .nav {
     display: flex;
     align-items: center;
 }
 
-/* ховер лого по всій площині у заголовку */
+/* hover logo across the entire plane in the header */
 .nav__logo {
     padding-top: 24px;
     padding-bottom: 25px;
 }
 
-/* Меню */
+/* menu */
 .menu {
     display: flex;
     margin-left: 93px;
@@ -40,7 +38,7 @@
     color: var(--brand-black);
     transition: color var(--transition);
 
-/* Підкреслювання під назвою */ 
+/* Underline under the title */ 
     &::after {
         content: "";
         position: absolute;
@@ -56,14 +54,14 @@
         transition: transform var(--transition);
     }
 
-    /* Поява підкреслювання під назвою по ховеру/фокусу */
+    /* Appearance of underlining under hover/focus title */
     &:hover::after,
     &:focus::after {
         transform: scale(1);
     }
 }
 
-/* Підсвічування активної сторінки */
+/* Highlighting the active page */
 .menu__link--current {
     color: var(--brand-main-color);
 
@@ -72,7 +70,7 @@
     }
 }
 
-/* Контакти в хедері */
+/* Contacts in the header */
 .contacts {
     display: flex;
     margin-left: auto;
@@ -110,4 +108,3 @@
     color: var(--brand-main-color);
 }
 
-/* ========== /ВЕРХНІЙ РЯДОК ========== */

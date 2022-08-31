@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* variables */
+/*  Variables  */
 :root {
   --brand-main-color: #2196f3;
   --brand-bg-color: #2F303A;
@@ -17,7 +17,6 @@
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* variables */
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -29,8 +28,7 @@ Use a better box model (opinionated).
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /**
@@ -281,7 +279,7 @@ summary {
   display: list-item;
 }
 
-/* dropping styles */
+/* reset styles */
 body {
   background-color: var(--simple-white);
   font-family: var(--brand-font), sans-serif;
@@ -303,7 +301,7 @@ img {
   height: auto;
 }
 
-/* taking off stylization from ul */
+/* I remove the stylization from ul */
 ul,
 ol {
   margin: 0;
@@ -311,34 +309,26 @@ ol {
   list-style: none;
 }
 
-/* taking off stylization from  <a> */
+/* I remove the stylization from <a> */
 a {
   text-decoration: none;
 }
 
-/* Заборона зміну розміру в textarea */
+/* Prohibition of resizing in textarea */
 textarea {
   resize: none;
 }
 
 button {
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* Take off styles */
 /* Main button */
 .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: auto;
   width: 200px;
   height: 50px;
@@ -352,9 +342,7 @@ button {
   letter-spacing: 0.06em;
   color: var(--simple-white);
   background-color: var(--brand-main-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: background-color var(--transition);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transition);
 }
 .btn:hover, .btn:focus {
@@ -368,18 +356,11 @@ button {
   margin-left: 10px;
 }
 
-/* Main button */
 /* Close button on top right */
 .btn-close {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   position: absolute;
   top: 8px;
@@ -389,7 +370,6 @@ button {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--simple-white);
-  -webkit-transition: background-color var(--transition), color var(--transition);
   transition: background-color var(--transition), color var(--transition);
 }
 .btn-close:hover, .btn-close:focus {
@@ -404,7 +384,6 @@ button {
   background-origin: border-box;
 }
 
-/* Close button top right */
 /* Container */
 .container {
   margin-left: auto;
@@ -435,7 +414,6 @@ button {
   color: var(--brand-black);
 }
 
-/* /Section */
 /* Hidden */
 .visually-hidden {
   position: absolute;
@@ -455,8 +433,7 @@ button {
     position: fixed;
     transform: scale(0);
 } */
-/* /Hidden */
-/* Stylization logo */
+/* /Stylization logo */
 .logo {
   display: block;
   font-family: var(--brand-logo-font), sans-serif;
@@ -474,15 +451,10 @@ button {
   color: var(--logo-negative-color);
 }
 
-/* Stylization logo */
-/* Social networks */
+/* Social networks*/
 .socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .socials__item:not(:last-child) {
@@ -496,21 +468,14 @@ button {
 }
 
 .socials__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 44px;
   width: 44px;
   border-radius: 50%;
   color: var(--icons-grey);
   background-color: var(--simple-white);
-  -webkit-transition: background-color var(--transition), color var(--transition);
   transition: background-color var(--transition), color var(--transition);
 }
 .socials__link:hover, .socials__link:focus {
@@ -523,21 +488,15 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Social networks */
-/* todo fix the header */
-/* Top line */
+/* top line */
 .header {
   border-bottom: 1px solid #ECECEC;
 }
 
-/* navigation (flex for logo+menu*/
+/* navigation (flex for logo+menu) */
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 /* hover logo across the entire plane in the header */
@@ -546,10 +505,8 @@ button {
   padding-bottom: 25px;
 }
 
-/* Меню */
+/* menu */
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
   -webkit-user-select: none;
@@ -571,7 +528,6 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--brand-black);
-  -webkit-transition: color var(--transition);
   transition: color var(--transition);
   /* Underline under the title */
   /* Appearance of underlining under hover/focus title */
@@ -585,16 +541,11 @@ button {
   height: 4px;
   border-radius: 2px;
   background-color: var(--brand-main-color);
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform var(--transition);
-  transition: -webkit-transform var(--transition);
+  transform: scale(0);
   transition: transform var(--transition);
-  transition: transform var(--transition), -webkit-transform var(--transition);
 }
 .menu__link:hover::after, .menu__link:focus::after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 /* Highlighting the active page */
@@ -602,19 +553,14 @@ button {
   color: var(--brand-main-color);
 }
 .menu__link--current::after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 /* Contacts in the header */
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .contacts__item:not(:last-child) {
@@ -627,12 +573,8 @@ button {
 }
 
 .contacts__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-top: 22px;
   padding-bottom: 22px;
   font-weight: 500;
@@ -640,7 +582,6 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--brand-grey);
-  -webkit-transition: color var(--transition);
   transition: color var(--transition);
 }
 
@@ -651,8 +592,7 @@ button {
   color: var(--brand-main-color);
 }
 
-/* Top line */
-/* Hero */
+/*  Hero  */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -664,7 +604,6 @@ button {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background/hero-pic.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background/hero-pic.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -682,24 +621,15 @@ button {
   color: var(--simple-white);
 }
 
-/* Hero */
-/* specialty */
+/* particular qualities */
 .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .features__icon-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -728,22 +658,15 @@ button {
 
 .features__item {
   display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-/* specialty */
 /* What we do */
 .offers {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -760,15 +683,9 @@ button {
 }
 
 .offers__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 70px;
   position: absolute;
@@ -784,11 +701,8 @@ button {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* What we do */
 /* Our team */
 .employee {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -815,26 +729,18 @@ button {
 }
 
 .employee__item {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: var(--simple-white);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .employee__item:not(:last-child) {
   margin-right: 30px;
 }
 
-/* Our team */
-/* regular customers */
+/* Permanent clients */
 .customers {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -845,15 +751,9 @@ button {
 }
 
 .customers__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .customers__item:not(:last-child) {
@@ -861,21 +761,14 @@ button {
 }
 
 .customers__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icons-grey);
   border-radius: 4px;
   color: var(--icons-grey);
-  -webkit-transition: color var(--transition), border var(--transition);
   transition: color var(--transition), border var(--transition);
 }
 .customers__link:hover, .customers__link:focus {
@@ -883,16 +776,10 @@ button {
   border: 1px solid var(--brand-main-color);
 }
 
-/* regular customers */
-/* button's filter */
-/* todo there should be radio buttons */
+/* buton's filter */
 .filter-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 50px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -913,26 +800,18 @@ button {
   background-color: var(--brand-bg-grey);
   border: transparent;
   border-radius: 4px;
-  -webkit-transition: color var(--transition), background-color var(--transition), -webkit-box-shadow var(--transition);
-  transition: color var(--transition), background-color var(--transition), -webkit-box-shadow var(--transition);
   transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
-  transition: color var(--transition), background-color var(--transition), box-shadow var(--transition), -webkit-box-shadow var(--transition);
 }
 .filter-btns__btn:hover, .filter-btns__btn:focus {
   color: var(--simple-white);
   background-color: var(--brand-main-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* button's filter */
-/* samples of work */
+/*  Sample of work (cards) */
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .cards__item:not(:nth-child(3n)) {
@@ -944,33 +823,23 @@ button {
 }
 
 .cards__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   padding: 24px;
-  /* give the text a scroll if there is an overflow of content */
+  /* give the text a scroll if would be  an overflow of content */
   overflow: auto;
   font-size: 18px;
   line-height: 1.56;
   color: var(--simple-white);
   opacity: 0;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-  -webkit-transition: opacity var(--transition), -webkit-transform var(--transition);
-  transition: opacity var(--transition), -webkit-transform var(--transition);
+  transform: translate(0, 100%);
   transition: transform var(--transition), opacity var(--transition);
-  transition: transform var(--transition), opacity var(--transition), -webkit-transform var(--transition);
 }
 
 /* * «B17» Cards on the Portfolio page have a border (border property), but only at the bottom of the card. */
@@ -998,20 +867,16 @@ button {
 
 .cards__link {
   display: block;
-  -webkit-transition: -webkit-box-shadow var(--transition);
-  transition: -webkit-box-shadow var(--transition);
   transition: box-shadow var(--transition);
-  transition: box-shadow var(--transition), -webkit-box-shadow var(--transition);
 }
 .cards__link:hover, .cards__link:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Animation on a card */
 .cards__animation {
   position: relative;
-  /* hide everything that goes beyond the element */
+  /* hide everything that goes beyond the element*/
   overflow: hidden;
 }
 .cards__animation::before {
@@ -1024,12 +889,8 @@ button {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-  -webkit-transition: opacity var(--transition), -webkit-transform var(--transition);
-  transition: opacity var(--transition), -webkit-transform var(--transition);
+  transform: translate(0, 100%);
   transition: transform var(--transition), opacity var(--transition);
-  transition: transform var(--transition), opacity var(--transition), -webkit-transform var(--transition);
 }
 
 .cards__link:hover .cards__animation::before,
@@ -1037,13 +898,11 @@ button {
 .cards__link:hover .cards__text,
 .cards__link:focus .cards__text {
   opacity: 1;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
-/* Animation on a card */
-/* samples of work (cards) */
-/* Footer */
+/* Animation on a card  */
+/*  Footer  */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1051,18 +910,12 @@ button {
 }
 
 .footer__columns {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: baseline;
   display: flex;
 }
 
 .footer__contacts-box {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .footer__logo {
@@ -1084,23 +937,14 @@ button {
 }
 
 .footer__subscribe-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 
 .footer__subscribe-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .footer__btn {
@@ -1115,22 +959,12 @@ button {
   border-radius: 4px;
   color: var(--simple-white);
 }
-.footer__subscribe-input::-webkit-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
 .footer__subscribe-input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 .footer__subscribe-input:-ms-input-placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer__subscribe-input::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
@@ -1153,9 +987,8 @@ button {
 
 .address__link {
   color: var(--simple-white);
-  -webkit-transition: color var(--transition);
   transition: color var(--transition);
-  /* * «С5» Contact text in the header and footer changes color on hover and focus. */
+  /*  «С5» Contact text in the header and footer changes color on hover and focus */
   /* .address__link--contact:hover,
   .address__link--contact:focus, */
 }
@@ -1168,9 +1001,7 @@ button {
   /* transition: color var(--transition); */
 }
 
-/* Footer */
-/* todo make autofocus on modal */
-/* Modal window  */
+/* ========== Modal window  */
 /* Modal window overlay */
 .backdrop {
   position: fixed;
@@ -1179,7 +1010,6 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity var(--transition), visibility var(--transition);
   transition: opacity var(--transition), visibility var(--transition);
 }
 
@@ -1190,24 +1020,14 @@ button {
 }
 
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.85);
-          transform: translate(-50%, -50%) scale(0.85);
-  -webkit-transition: visibility var(--transition), -webkit-transform var(--transition);
-  transition: visibility var(--transition), -webkit-transform var(--transition);
+  transform: translate(-50%, -50%) scale(0.85);
   transition: transform var(--transition), visibility var(--transition);
-  transition: transform var(--transition), visibility var(--transition), -webkit-transform var(--transition);
 }
 
-/* Modal window overlay */
 /* Main window */
 .modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1215,12 +1035,8 @@ button {
   /* text-align: center; */
   padding: 40px;
   background-color: var(--simple-white);
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: -webkit-transform var(--transition);
-  transition: -webkit-transform var(--transition);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition);
-  transition: transform var(--transition), -webkit-transform var(--transition);
   /* Prohibition of text selection so as not to disturb the user */
 }
 
@@ -1239,20 +1055,14 @@ button {
   margin-bottom: 20px;
 }
 
-/* Styles of input fields */
+/*  Styles of input fields */
 .modal__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--brand-grey);
-  -webkit-transition: color var(--transition);
   transition: color var(--transition);
 }
 .modal__label:not(:last-child) {
@@ -1260,13 +1070,8 @@ button {
 }
 
 .modal__input-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
   color: var(--brand-black);
 }
@@ -1281,7 +1086,6 @@ button {
   border: 1px solid;
   border-radius: 4px;
   border-color: rgba(33, 33, 33, 0.2);
-  -webkit-transition: border-color var(--transition);
   transition: border-color var(--transition);
 }
 
@@ -1304,22 +1108,12 @@ button {
   padding-left: 16px;
   height: 96px;
 }
-.modal__input--textarea::-webkit-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.167;
-}
 .modal__input--textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.167;
 }
 .modal__input--textarea:-ms-input-placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 12px;
-  line-height: 1.167;
-}
-.modal__input--textarea::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-size: 12px;
   line-height: 1.167;
@@ -1336,8 +1130,7 @@ button {
   width: 18px;
   height: 18px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 12px;
   fill: currentColor;
 }
@@ -1355,22 +1148,16 @@ button {
   color: var(--brand-main-color);
 }
 
-/* Styles of input fields */
-/* Field of agreement with terms */
-/* Styles for general label */
+/* Styles of input fields  */
+/* === Поле згоди з умовами === */
+/* Стилі для загального label */
 .agreement__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   color: transparent;
-  /* I change the color of the text on hover/focus*/
+  /* I change the color of the text on hover/focus */
   /* I change the color of the border of the icon on hover/focus */
 }
 .agreement__label:hover .agreement__text, .agreement__label:focus .agreement__text {
@@ -1385,19 +1172,14 @@ button {
 
 /* default checkbox icon styles */
 .agreement__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-right: 7px;
   width: 16px;
   height: 15px;
   fill: currentColor;
   border: 1px solid var(--brand-black);
   border-radius: 4px;
-  -webkit-transition: border-color var(--transition);
   transition: border-color var(--transition);
 }
 
@@ -1406,7 +1188,6 @@ button {
   font-size: 14px;
   line-height: 1.71;
   color: var(--brand-grey);
-  -webkit-transition: color var(--transition);
   transition: color var(--transition);
 }
 
@@ -1417,7 +1198,7 @@ button {
 }
 
 /* Hidden input field with type="checkbox" */
-/* Changing the style of the checkbox icon when clicking on agreement  */
+/* Changing the style of the checkbox icon when clicking on .agreement  */
 .agreement__checkbox:checked + .agreement__icon {
   /* background-origin: border-box; */
   color: var(--brand-main-color);
@@ -1427,11 +1208,7 @@ button {
   border: 0;
 }
 
-/* I draw an outline, because otherwise, when focusing through "TAB", the focus is not visible */
+/* I draw an outline, because otherwise, when focusing through "TAB", the focus is not visible*/
 .agreement__checkbox:focus + .agreement__icon {
   outline: 1px solid var(--brand-black);
-}
-
-/* Field of agreement with terms */
-/* Modal window */
-/* #sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

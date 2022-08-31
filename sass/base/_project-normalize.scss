@@ -1,4 +1,4 @@
-/* ========== СКИДАННЯ СТИЛІВ ========== */
+/* reset styles */
 body {
     background-color: var(--simple-white);
     font-family: var(--brand-font), sans-serif;
@@ -20,7 +20,7 @@ img {
     height: auto;
 }
 
-/* Знімаю стилізацію з ul */
+/* I remove the stylization from ul */
 ul,
 ol {
     margin: 0;
@@ -28,12 +28,12 @@ ol {
     list-style: none;
 }
 
-/* Знімаю стилізацію з <a> */
+/* I remove the stylization from <a> */
 a {
     text-decoration: none;
 }
 
-/* Заборона зміну розміру в textarea */
+/* Prohibition of resizing in textarea */
 textarea {
     resize: none;
 }
@@ -43,4 +43,3 @@ button {
     box-sizing: border-box;
 }
 
-/* ========== /СКИДАННЯ СТИЛІВ ========== */

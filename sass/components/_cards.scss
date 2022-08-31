@@ -1,4 +1,4 @@
-/* ========== ЗРАЗКИ РОБІТ (КАРТКИ) ========== */
+/*  Sample of work (cards) */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@
 
     padding: 24px;
 
-    /* даємо тексту скролл, якщо буде переповнення контенту */
+    /* give the text a scroll if would be  an overflow of content */
     overflow: auto;
 
     font-size: 18px;
@@ -38,10 +38,9 @@
         opacity var(--transition);
 }
 
-/* * «B17» У картках на сторінці Портфоліо є рамка (властивість border), але тільки у нижній частині картки. */
+/* * «B17» Cards on the Portfolio page have a border (border property), but only at the bottom of the card. */
 .cards__frame {
     padding: 20px 24px;
-
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
@@ -65,7 +64,6 @@
 
 .cards__link {
     display: block;
-    /* без цього не працює ховер. Чому? */
     transition: box-shadow var(--transition);
     &:hover,
     &:focus {
@@ -75,13 +73,11 @@
     }
 }
 
-/* === Анімація по картці === */
+/* Animation on a card */
 .cards__animation {
     position: relative;
-
-    /* ховаємо все, що виходить за рамки елементу */
+    /* hide everything that goes beyond the element*/
     overflow: hidden;
-    
     &::before {
         content: "";
         display: block;
@@ -90,9 +86,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-
         background-color: rgba(33, 150, 243, 0.9);
-
         opacity: 0;
         transform: translate(0, 100%);
         transition: transform var(--transition),
@@ -108,7 +102,5 @@
     transform: translate(0, 0);
 }
 
-/* === /Анімація по картці === */
+/* Animation on a card  */
 
-
-/* ========== /ЗРАЗКИ РОБІТ (КАРТКИ) ========== */
